@@ -61,7 +61,7 @@ int main(int argc, const char * argv[])
                 NSMutableDictionary *dict = [sets objectForKey:key];
                 NSString *hardware = [dict valueForKeyPath:@"Interface.Hardware"];
                 //        NSLog(@"%@", hardware);
-                if ([hardware isEqualToString:@"AirPort"] || [hardware isEqualToString:@"Wi-Fi"] || [hardware isEqualToString:@"Ethernet"]) {
+                if ([hardware isEqualToString:@"AirPort"] || [hardware isEqualToString:@"Wi-Fi"] || [hardware isEqualToString:@"Ethernet"])|| [hardware isEqualToString:@"VPN"]) {
                     
                     if ([mode isEqualToString:@"auto"]) {
 
